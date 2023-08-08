@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+
+    <link rel="stylesheet" href="Css/custom.css">
+    <link rel="stylesheet" href="Css/card.css">
+    <link rel="stylesheet" href="Css/Product1.css">
+    <link rel="stylesheet" href="Css/Product2.css">
+    <link rel="stylesheet" href="Css/Product3.css">
+    <link rel="stylesheet" href="Css/button.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <style>
+        body{
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+
+}
+.box{
+    color: #fff;
+    padding: 20px;
+    display: none;
+    margin-top: 20px;
+}
+/* Responsive */
+
+@media   (min-width: 320px) and (max-width:2560px) {
+ .shipping{
+ padding-left: 15px;
+ }
+}.card-container{
+    background-color: white;
+    width: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    border-radius: 12px;
+   height: auto;
+}
+
+/* Heading */
+.text {
+    padding: 2px 3px;
+  }
+#headertext{
+    width: 67%; 
+    text-align: center; 
+    border-bottom: 1px solid #000; 
+    line-height: 0.1em;
+    margin-left: 100px;
+ 
+}
+#headertext span { 
+    background-color: white;
+         padding:0 10px; 
+         color: #007F61;
+         margin-left: -52px;
+     }div.a {
+    height: auto;
+    border: 1px solid black;
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 12px;
+  }
+
+  /* Radio button */
+  #first{
+    accent-color: #007F61;
+    position: relative;
+    top: 31px;
+    left: 10px;
+
+  }
+
+  /* Text */
+  #spantext{
+    position: relative;
+    left: 25px;
+    color: black;
+  }
+  #pairtext1{
+    position: relative;
+    top: 18px;
+    left: 15px;
+    line-height: 1.5em;
+    color: black;
+
+}
+  #productoff{
+    text-align: right;
+    position: relative;
+    top: -45px;
+    left: -28px;
+    color: black;
+  }
+
+  /* Dropdown */
+  #size{
+    position: relative;
+    font-weight: normal;
+    font-size: 12px; 
+    left: 21px;
+    top: -63px;
+
+    color: black;
+  }
+  .one{
+    font-weight: normal;
+    font-size: 12px;
+    position: relative;
+    left: 20px;
+    top: -40px;
+    color: black;
+
+  }
+  #sizes{
+    width: 15%;
+    position: relative;
+    left: 25px;
+    top: -38px;
+  }
+
+  #color{
+    position: relative;
+    font-weight: normal;
+    font-size: 12px;
+    left: 125px;
+    color: black;
+    top: -83px;
+  }
+  #colors{
+    width: 15%;
+    position: relative;
+    left: 154px;
+    top: -94px;
+  }
+
+  /* second */
+
+  .two{
+    font-weight: normal;
+    font-size: 12px;
+    position: relative;
+    left: 20px;
+    top: -78px;
+    color: black;
+  }
+  #sizes2{
+    width: 15%;
+    position: relative;
+    left: 25px;
+    top: -76px;
+    color: black;
+  }
+
+
+  #colors2{
+    width: 15%;
+    position: relative;
+    left: 109px;
+    top: -126px;
+    color: black;
+  }div.b {
+    height: auto;
+    border: 1px solid black;
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 12px;
+  }
+
+#second{
+    accent-color: #007F61;
+    position: relative;
+    top: 31px;
+    left: 10px;
+
+  }.popular{
+    color: #007F61;
+    position: relative;
+    text-align: right;
+    top: -42px;
+    left: -33px;
+}
+#productoffer{
+    position: relative;
+    text-align: right;
+    left: -38px;
+    top: -82px;
+    color: black;
+
+}
+#striktext{
+    text-decoration: line-through;
+    text-align: center;
+    position: relative;
+    top: -50px;
+    font-size: 9px;
+    color: grey;
+}
+#size3 {
+    position: relative;
+    font-weight: normal;
+    font-size: 12px;
+    left: 42px;
+    top: -87px;
+    color: black;
+}
+
+.one2{
+    font-weight: normal;
+    font-size: 12px;
+    position: relative;
+    left: 20px;
+    top: -96px;
+    color: black;
+
+    
+  }
+  #sizes3 {
+    width: 15%;
+    position: relative;
+    left: 25px;
+    top: -93px;
+    color: black;
+}
+
+#colorproduct{
+    position: relative;
+    font-weight: normal;
+    font-size: 12px;
+    left: 125px;
+    top: -143px;
+    color: black;
+  }
+  #colorproducts{
+    width: 17%;
+    position: relative;
+    left: 124px;
+    top: -150px;
+    color: black;
+  }
+
+  /* second */
+
+  .two2{
+    font-weight: normal;
+    font-size: 12px;
+    position: relative;
+    left: 20px;
+    top: -137px;
+    color: black;
+  }
+  #sizes4{
+    width: 15%;
+    position: relative;
+    left: 25px;
+    top: -137px;
+    color: black;
+  }
+
+
+  #colors3{
+    width: 17%;
+    position: relative;
+    left: 124px;
+    top: -155px;
+    color: black;
+  }div.c {
+    height: auto;
+    border: 1px solid black;
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 12px;
+  }
+  #third{
+    accent-color: #007F61;
+    position: relative;
+    top: 31px;
+    left: 10px;
+
+  }
+  /* Text */
+  #spantext{
+    position: relative;
+    left: 25px;
+  }
+  #pairtext2{
+    position: relative;
+    top: 18px;
+    left: 15px;
+    line-height: 1.5em;
+
+}
+  #productoff{
+    text-align: right;
+    position: relative;
+    top: -45px;
+    left: -28px;
+  }
+
+  /* Dropdown */
+  #size{
+    position: relative;
+    font-weight: normal;
+    font-size: 12px;
+ 
+    left: 21px;
+    top: -63px;
+
+  }
+  .one{
+    font-weight: normal;
+    font-size: 12px;
+    position: relative;
+    left: 0px;
+    top: -73px;
+
+  }
+  #sizes{
+    width: 15%;
+    position: relative;
+    left: 5px;
+    top: -71px;
+  }
+
+  #color{
+    position: relative;
+    font-weight: normal;
+    font-size: 12px;
+    left: 114px;
+    top: -118px;
+}
+  
+  #colors{
+    width: 15%;
+    position: relative;
+    left: 109px;
+    top: -125px;
+}
+  
+
+  /* second */
+
+  .two{
+    font-weight: normal;
+    font-size: 12px;
+    position: relative;
+    left: 0px;
+    top: -110px;
+  }
+  #sizes2{
+    width: 15%;
+    position: relative;
+    left: 25px;
+    top: -76px;
+    left: 7px;
+    top: -107px;
+  }
+
+  .shipping{
+    padding: 15px;
+    color: #007F61;
+    position: relative;
+    left: 100px;
+}
+.total{
+    text-align: right;
+    position: relative;
+    top: -65px;
+    left: -105px;
+}
+
+
+  .icon-plus {
+    position: relative;
+    top:22px;
+    left: 37%;
+    width: 20px;
+    height: 20px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  /* vertical line */
+  .icon-plus:before {
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 37.5%;
+    width: 25%;
+    height: 100%;
+    background-color: #fff;
+  }
+  /* horizontal line */
+  .icon-plus:after {
+    content:"";
+    position: absolute;
+    top:37.5%;
+    left: 0;
+    width: 100%;
+    height: 25%;
+    background-color: #fff;
+  }
+  button{   
+    width: 68%;
+    background-color: #007F61;
+    color: #fff;
+    height: 50px;
+    position: relative;
+    top: -62px;
+    font-size: 20px;
+    left: 107px;
+
+
+  }
+
+  #cart{
+    position: relative;
+    top: -27px;
+    left: 16px;
+}
+  
+ 
+span {
+  content: "\00A9";
+}
+.textsponser{
+    text-align: right;
+    position: relative;
+    top: -71px;
+    left: -132px;
+    font-weight: normal;
+    font-size: 10px;
+    font-style: italic;
+}
+    </style>
+</head>
+
+<body>
+    <div class="card-container">
+        <!-- Heading -->
+        <div class="text">
+            <p id="headertext"><span>Bundle & Save</span></p>
+        </div>
+
+        <!-- Products -->
+
+        <!-- 1st Product -->
+        <div class="a">
+            <div id="div1" onclick="clickablediv()">
+                <label ><input type="radio" name="colorRadio" value="firstpair" id="first" checked="checked"> <label id="pairtext1" for="1pair">1
+                    Pair <br><span id="spantext">DKK 195.00</span> </label>
+                <p id="productoff" for="1pair">50% OFF</p>
+            </label>
+
+
+
+            <div class="firstpair box">
+               
+                    <p id="size">Size</p>
+                    <label class="one" for="size">#1</label>
+                    <select name="sizes" id="sizes">
+                        <option value="s">S</option>
+                        <option value="m">M</option>
+                        <option value="l">L</option>
+                    </select>
+                
+                <div>
+                    <p id="color">Colour</p>
+                    <select name="colors" id="colors">
+                        <option value="color">Color</option>
+                        <option value="blue">Blue</option>
+                        <option value="red">Red</option>
+                        <option value="pink">Pink</option>
+                        <option value="brown">Brown</option>
+                    </select>
+                </div>
+                <div>
+
+                    <label class="two" for="size2">#2</label>
+                    <select name="sizes" id="sizes2">
+                        <option value="s">S</option>
+                        <option value="m">M</option>
+                        <option value="l">L</option>
+                    </select>
+                </div>
+                <div>
+
+                    <select name="colors" id="colors2">
+                        <option value="color">Color</option>
+                        <option value="blue">Blue</option>
+                        <option value="red">Red</option>
+                        <option value="pink">Pink</option>
+                        <option value="brown">Brown</option>
+                    </select>
+                </div>
+            </div>
+
+            </div>
+           
+
+        </div>
+
+        <br>
+
+        <!-- 2nd Product -->
+        <div class="b">
+            <div id="div2" onclick="clickablediv1()">
+                <label><input type="radio" name="colorRadio" value="secondpair" id="second"> <label id="pairtext1" for="2pair">2
+                    Pair <br><span id="spantext">DKK 345.00</span> </label>
+                <p class="popular">Most Popular</p>
+                <p id="striktext">DKK 195.00 </p>
+                <p id="productoffer" for="2pair">40% OFF</p>
+            </label>
+            <div class="secondpair box">
+                <div>
+                    <p id="size3">Size</p>
+                    <label class="one2" for="size">#1</label>
+                    <select name="sizes" id="sizes3">
+                        <option value="s">S</option>
+                        <option value="m">M</option>
+                        <option value="l">L</option>
+                    </select>
+                </div>
+                <div>
+                    <p id="colorproduct">Colour</p>
+                    <select name="colors" id="colorproducts">
+                        <option value="color">Color</option>
+                        <option value="blue">Blue</option>
+                        <option value="red">Red</option>
+                        <option value="pink">Pink</option>
+                        <option value="brown">Brown</option>
+                    </select>
+                </div>
+                <div>
+
+                    <label class="two2" for="size2">#2</label>
+                    <select name="sizes" id="sizes4">
+                        <option value="s">S</option>
+                        <option value="m">M</option>
+                        <option value="l">L</option>
+                    </select>
+                </div>
+                <div>
+
+                    <select name="colors" id="colors3">
+                        <option value="color">Color</option>
+                        <option value="blue">Blue</option>
+                        <option value="red">Red</option>
+                        <option value="pink">Pink</option>
+                        <option value="brown">Brown</option>
+                    </select>
+                </div>
+            </div>
+
+
+            </div>
+            
+        </div>
+        <br>
+
+        <!-- 3rd product -->
+
+        <div class="c">
+            <div id="div" onclick="clickablediv2()"> 
+                <label><input type="radio" name="colorRadio" value="thirdpair" id="third"> <label id="pairtext2" for="3pair">3
+                    Pair <br><span id="spantext">DKK 195.00</span> </label>
+                <p id="productoff" for="3pair">60% OFF</p>
+            </label>
+            <div class="thirdpair box">
+                <div>
+                    <p id="size">Size</p>
+                    <label class="one" for="size">#1</label>
+                    <select name="sizes" id="sizes">
+                        <option value="s">S</option>
+                        <option value="m">M</option>
+                        <option value="l">L</option>
+                    </select>
+                </div>
+                <div>
+                    <p id="color">Colour</p>
+                    <select name="colors" id="colors">
+                        <option value="color">Color</option>
+                        <option value="blue">Blue</option>
+                        <option value="red">Red</option>
+                        <option value="pink">Pink</option>
+                        <option value="brown">Brown</option>
+                    </select>
+                </div>
+                <div>
+
+                    <label class="two" for="size">#2</label>
+                    <select name="sizes" id="sizes2">
+                        <option value="s">S</option>
+                        <option value="m">M</option>
+                        <option value="l">L</option>
+                    </select>
+                </div>
+                <div>
+
+                    <select name="colors" id="colors">
+                        <option value="color">Color</option>
+                        <option value="blue">Blue</option>
+                        <option value="red">Red</option>
+                        <option value="pink">Pink</option>
+                        <option value="brown">Brown</option>
+                    </select>
+                </div>
+            </div>
+
+
+            </div>
+          
+        </div>
+
+
+        <div>
+            <div class="shipping">
+                <p>Free 2 Day Shipping </p>
+            </div>
+            <div class="total">
+                <p>Total: DKK 360.00</p>
+            </div>
+
+        </div>
+        <div>
+            <button>
+                <div class="icon icon-plus"></div>
+                <p id="cart">Add to Cart</p>
+            </button>
+        </div>
+        <div class="textsponser">
+            <span>&#169; Powered by Pumper</span>
+        </div>
+    </div>
+
+
+    <script src="script/custom.js"></script>
+</body>
+
+</html>
